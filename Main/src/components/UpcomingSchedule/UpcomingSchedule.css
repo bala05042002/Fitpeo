@@ -1,0 +1,17 @@
+.upcoming{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.upcoming > p{
+    font-size: 14px;
+    color: rgb(107, 107, 107)
+}

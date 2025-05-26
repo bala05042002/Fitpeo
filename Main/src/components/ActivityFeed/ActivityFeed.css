@@ -1,0 +1,70 @@
+.activity{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.graphs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.activity-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activity-header > p{
+    font-size: 12px;
+    color: rgb(150, 150, 150)
+}
+
+.graph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indicator{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.indicator > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 3px;
+    border-radius: 10px;
+}
+
+.indicator > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 3px;
+    border-radius: 10px;
+}
+
+.indicator > div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    margin-top: 15px;
+    width: 3px;
+    border-radius: 10px;
+}
+
+.indicator > div:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    margin-top: 38px;
+    width: 3px;
+    border-radius: 10px;
+}

@@ -1,0 +1,44 @@
+section.dashboard{
+    height: 89vh;
+    width: 94vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dashboard-left{
+    background-color: white;
+    padding: 20px 20px;
+    width: 47vw;
+    height: 89vh
+}
+
+.dashboard-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 50px;
+    width: 38vw;
+}
+
+.dashboard-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header > h1{
+    color: darkblue;
+}
+
+.dashboard-header > p{
+    font-size: 10px;
+    color: blue;
+}
+
+.dashboard-overview{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 10px 20px;
+}

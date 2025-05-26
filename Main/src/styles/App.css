@@ -1,0 +1,477 @@
+/* I just use direct css I also know tailwindcss and scss but you didn't mension so I can use this normal css */
+
+/* Importing ROBOTO FONT from GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(228, 228, 228);
+    padding-left: 10px;
+}
+
+.main-section{
+    display: grid;
+    grid-template-columns: 170px 1fr;
+}
+
+a{
+    color: rgb(146, 146, 146);
+    text-decoration: none;
+}
+
+a.active{
+    color: black;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* Complete responsive design below with media queries */
+
+@media (max-width: 1200px) {
+    header{
+        width: 100%;
+    }
+
+    .dashboard-right{
+        gap: 2px;
+        padding: 0px 10px;
+        width: 38vw;
+    }
+
+    .heart{
+        top: 70px;
+        right: -55px;
+    }
+
+    .leg{
+        bottom: 110px;
+        left: -45px;
+    }
+}
+
+@media (max-width: 1100px) {
+    section.dashboard{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header{
+        width: 94vw;
+    }
+    
+    .dashboard-left{
+        width: 40vw;
+        height: 89vh
+    }
+    
+    .search-bar-component{
+        gap: 10px;
+        padding-top: 30px;
+        width: 40vw;
+    }
+
+    section.dashboard{
+        height: 89vh;
+        width: 89vw;
+        grid-template-columns: 1fr 0.5fr;
+    }
+    
+    .dashboard-right{
+        gap: 5px;
+        padding: 0px 10px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .dashboard-right{
+        gap: 2px;
+        padding: 0px 5px;
+        margin-right: 110px;
+    }
+
+    h1{
+        font-size: 0.8rem;
+    }
+
+    p{
+        font-size: 0.6rem;
+    }
+
+    a{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 950px) {
+    section.dashboard{
+        grid-template-columns: 1fr;
+    }
+
+    
+    .logo-component{
+        padding: 22px 40px 0px 10px;
+    }
+
+    .search-bar-component{
+        background-color: transparent;
+        width: 160%;
+    }
+
+    .search-bar-component input{
+        background-color: transparent;
+    }
+
+    .sidebar{
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 40px;
+        height: 10vh;
+    }
+
+    .general-info{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+        
+    .general-info > div > p{
+        font-size: 0.6rem;
+    }
+
+    .sidebar-navigation > h1{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .general-info > div {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .dashboard-left{
+        width: 110%;
+        margin: 0;
+        height: 100%
+    }
+
+    .heart{
+        top: 24%;
+        right: 5%;
+    }
+
+    .leg{
+        bottom: 30%;
+        left: 4%;
+    }
+    
+    .dashboard-header > h1{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    
+    .main-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .details{
+        width: 100%
+    }
+
+    .dashboard-right{
+        width: 100%;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 850px) {
+    .settings{
+        position: absolute;
+        top: 2px;
+        right: 10px;
+    }
+
+    .sidebar{
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        height: 10vh;
+    }
+    
+    .general-info{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .heart{
+        right: -1%;
+    }   
+
+    .leg{
+        left: -0%;
+    }
+}
+
+@media (max-width: 750px) {
+    .settings{
+        right: 30%;
+    }
+
+    .support{
+        position: absolute;
+        top: 2px;
+        right: 5px
+    }
+
+
+    .heart{
+        right: -7%
+    }
+
+    .leg{
+        left: -4%
+    }
+}
+
+@media (max-width: 650px) {
+    .settings{
+        right: 33%
+    }
+
+    .heart{
+        right: -17%
+    }
+
+    .leg{
+        left: -12%
+    }
+
+    .sidebar {
+        display: none;
+    }
+    .sidebar.mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .general-info{
+        position: absolute;
+        top: 10%;
+        align-items: start;
+        justify-content: space-between;
+        height: 65vh;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .general-info > div{
+        position: relative;
+        display: flex;
+        align-items: start;
+        margin-left: 10px;
+        flex-direction: column;
+    }
+
+    .support{
+        position: relative;
+    }
+
+    .settings{
+        position: absolute;
+        top: 89%;
+    }
+
+    .dashboard-left{
+        width: 109%;
+        margin-top: 14px;
+        height: 100%;
+        border-radius: 5px;
+    }
+    
+    .logo-component{
+        width: 170px;
+        padding: 24px 40px 0px 43px;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-bar-component{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        z-index: 900;
+    }
+
+    section.dashboard{
+        margin-top: 70px;
+    }
+
+    .user-profile{
+        width: 67vw;
+    }
+
+    .dashboard-left{
+        width: 96vw
+    }
+
+    .heart{
+        right: -25%;
+    }
+
+    .leg{
+        left: -20%;
+    }
+}
+
+@media (max-width: 550px) {
+    .user-profile{
+        width: 64vw;
+    }
+
+    .heart{
+        top: 20%;
+        right: -30%;
+    }
+
+    .leg{
+        top: 46%;
+        left: -25%;
+    }
+
+    .dates{
+        width: 95vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .user-profile{
+        width: 60vw;
+    }
+
+    .heart{
+        top: 20%;
+        right: -40%;
+    }
+
+    .leg{
+        top: 35%;
+        left: -32%;
+    }
+}
+
+@media (max-width: 470px) {
+    .user-profile{
+        width: 58vw;
+    }
+
+    .heart{
+        top: 24%;
+        right: -12%;
+    }
+
+    .leg{
+        top: 62%;
+        left: -8%;
+    }
+
+    .dashboard-overview{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
+    }
+
+    .health-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .details{
+        margin-top: 73px;
+    }
+}
+
+@media (max-width: 430px) {
+    .heart{
+        right: -4%;
+    }
+
+    .leg{
+        left: 0%;
+    }
+
+    .anatomy-image{
+        width: 100%
+    }
+
+    .dates{
+        width: 90vw;
+        overflow-x: auto;     /* Enable horizontal scroll */
+        overflow-y: hidden;   /* Hide vertical scroll */
+        white-space: nowrap; 
+    }
+    .logo-component{
+        width: 37vw;
+    }
+}
+
+@media (max-width: 400px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .heart{
+        right: -7%;
+    }
+
+    .leg{
+        left: -4%;
+    }
+
+    .health-details{
+        width: 170px;
+    }
+
+    .appointment-card{
+        width: 180px
+    }
+
+    .appointment-cards{
+        width: 88vw;
+    }
+
+    .upcoming{
+        width: 88vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .leg{
+        left: -8%;
+    }
+}
+
+@media (max-width: 360px) {
+    .heart{
+        right: -15%;
+    }
+
+    .leg{
+        left: -10%;
+    }
+}

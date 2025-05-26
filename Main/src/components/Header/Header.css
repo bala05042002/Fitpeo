@@ -1,0 +1,94 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 94vw;
+}
+
+.logo-component{
+    width: 170px;
+    padding: 15px 40px 0px 10px;
+}
+
+.logo-component > h1{
+    color: rgb(0, 174, 255);
+    font-size: 1.6rem;
+}
+
+.logo-component > h1 > span{
+    color: darkblue
+}
+
+.other-header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.search-bar-component{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: white;
+    box-sizing: inherit;
+    padding-top: 30px;
+    width: 47vw;
+}
+
+.search-bar-component > .search-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    padding: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.search-bar-component > .search-bar > img{
+    width: 20px;
+}
+
+.search-bar > input{
+    width: 90%;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.user-profile{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.user-profile > img{
+    background-color: rgb(0, 204, 255);
+    border-radius: 7px;
+    width: 40px;
+}
+
+.user-profile > button{
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 0px 8px;
+    border: 1px solid rgb(0, 0, 175);
+    background-color: rgb(0, 0, 175);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.user-profile > button:hover{
+    background-color: rgb(0, 0, 112);
+}
+
+.user-profile > button:active{
+    background-color: rgb(0, 0, 48);
+}
