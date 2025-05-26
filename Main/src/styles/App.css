@@ -111,6 +111,15 @@ body::-webkit-scrollbar{
 }
 
 @media (max-width: 950px) {
+    .calender-section{
+        width: 93vw
+    }
+
+    .dashboard-right{
+        width: 100vw;
+        margin-right: 0px;
+    }
+
     section.dashboard{
         grid-template-columns: 1fr;
     }
