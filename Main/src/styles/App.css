@@ -385,6 +385,15 @@ body::-webkit-scrollbar{
 }
 
 @media (max-width: 470px) {
+    .calender-section{
+        width: 93vw
+    }
+
+    .dashboard-right{
+        width: 97vw;
+        margin-right: 0px;
+    }
+
     .user-profile{
         width: 58vw;
     }
