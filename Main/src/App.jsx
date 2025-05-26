@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from './components/Header/Header'
-import Sidebar from './components/Sidebar/Sidebar'
+import Header from './components/Header/Header.jsx'
+import Sidebar from './components/Sidebar/Sidebar.jsx'
 import DashboardMainContent from './components/Dashboard/DashboardMainContent.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Layout from './Layout'
+import Layout from './Layout.jsx'
 
 const App = () => {
   return (

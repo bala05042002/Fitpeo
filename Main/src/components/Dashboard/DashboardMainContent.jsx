@@ -12,7 +12,7 @@ const DashboardMainContent = () => {
       <section className='dashboard-left'>
         <div className='dashboard-header'>
           <h1>Dashboard</h1>
-          <p>This Week →</p>
+          <p>This Week <span style={{fontSize: '1.2rem'}}>→</span></p>
         </div>
         {/* 2 Main Sections are below these are displaying the main content like Human Body and more */}
         <DashboardOverview />

@@ -32,7 +32,7 @@ const HealthStatusCards = () => {
         ))}
 
         {/* Static detail link or label at the bottom */}
-        <p className='details'>Details</p>
+        <p className='details'>Details <span style={{fontSize: '1.2rem'}}>→</span></p>
       </div>
     </>
   );
